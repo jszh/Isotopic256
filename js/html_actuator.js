@@ -91,28 +91,29 @@ HTMLActuator.prototype.clearContainer = function (container) {
 };
 
 HTMLActuator.prototype.getElement = function(n) {
-    var mass = '<span class="mass">' + n + '</span>';
-
-    switch (+n) {
-      case 2:
-        return mass + "H";
-      case 4:
-        return mass + "He";
-      case 8:
-        return mass + "Be";
-      case 16:
-        return mass + "O";
-      case 32:
-        return mass + "P";
-      case 64:
-        return mass + "Ni";
-      case 128:
-        return mass + "Sn";
-      case 256:
-        return mass + "No";
-      default:
-        return mass + "?";
-    }
+  return "";
+    // var mass = '<span class="mass">' + n + '</span>';
+    //
+    // switch (+n) {
+    //   case 2:
+    //     return mass + "H";
+    //   case 4:
+    //     return mass + "He";
+    //   case 8:
+    //     return mass + "Be";
+    //   case 16:
+    //     return mass + "O";
+    //   case 32:
+    //     return mass + "P";
+    //   case 64:
+    //     return mass + "Ni";
+    //   case 128:
+    //     return mass + "Sn";
+    //   case 256:
+    //     return mass + "No";
+    //   default:
+    //     return mass + "?";
+    // }
   }
 
 HTMLActuator.prototype.addTile = function (tile) {

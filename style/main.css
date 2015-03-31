@@ -399,15 +399,15 @@ hr {
       to {opacity: 0; visibility: hidden;}
     }
     .tile.tile-unstable.tile-explode .tile-inner {
-      -webkit-animation-name: explode; 
-      -webkit-animation-duration: 0.5s; 
+      -webkit-animation-name: explode;
+      -webkit-animation-duration: 0.5s;
       -webkit-transition-property: -webkit-transform;
       -webkit-transition-duration: 1s;
       -webkit-animation-iteration-count: 1;
       -webkit-animation-timing-function: ease;
 
-      -moz-animation-name: explode; 
-      -moz-animation-duration: 0.5s; 
+      -moz-animation-name: explode;
+      -moz-animation-duration: 0.5s;
       -moz-transition-property: -moz-transform;
       -moz-transition-duration: 1s;
       -moz-animation-iteration-count: 1;
@@ -425,15 +425,15 @@ hr {
       to {width: 107px; height: 107px; margin-top: 0; margin-left: 0;}
     }
   .tile.tile-unstable .tile-inner {
-    -webkit-animation-name: shake; 
-    -webkit-animation-duration: 0.1s; 
+    -webkit-animation-name: shake;
+    -webkit-animation-duration: 0.1s;
     -webkit-transition-property: -webkit-transform;
     -webkit-transition-duration: 1s;
     -webkit-animation-iteration-count: infinite;
     -webkit-animation-timing-function: linear;
 
-    -moz-animation-name: shake; 
-    -moz-animation-duration: 0.1s; 
+    -moz-animation-name: shake;
+    -moz-animation-duration: 0.1s;
     -moz-transition-property: -moz-transform;
     -moz-transition-duration: 1s;
     -moz-animation-iteration-count: infinite;
@@ -453,15 +453,15 @@ hr {
       to {opacity: 0; visibility: hidden;}
     }
   .tile .tile-inner span.count {
-      -webkit-animation-name: count; 
-      -webkit-animation-duration: 1s; 
+      -webkit-animation-name: count;
+      -webkit-animation-duration: 1s;
       -webkit-transition-property: -webkit-transform;
       -webkit-transition-duration: 1s;
       -webkit-animation-iteration-count: 1;
       -webkit-animation-timing-function: ease;
 
-      -moz-animation-name: count; 
-      -moz-animation-duration: 1s; 
+      -moz-animation-name: count;
+      -moz-animation-duration: 1s;
       -moz-transition-property: -moz-transform;
       -moz-transition-duration: 1s;
       -moz-animation-iteration-count: 1;
@@ -475,30 +475,37 @@ hr {
     line-height: 186px;
     display: block;
     font-size: 30px;
-    color: #fafafa;
-    color: rgba(255, 255, 255, 0.85);
+    /*color: #fafafa;*/
+    /*color: rgba(255, 255, 255, 0.85);*/
+    color: #776e65;
     visibility: hidden;
   }
   .tile-2 .element,
   .tile.tile-2 .tile-inner {
-    background: #eee4da;
+    background: #eee4da url('../images/2.png');
+    background-size: 100%;
     box-shadow: 0 0 30px 10px rgba(243, 215, 116, 0), inset 0 0 0 1px rgba(255, 255, 255, 0); }
+
   .tile-4 .element,
   .tile.tile-4 .tile-inner {
-    background: #ede0c8;
+    background: #ede0c8 url('../images/4.png');
+    background-size: 100%;
     box-shadow: 0 0 30px 10px rgba(243, 215, 116, 0), inset 0 0 0 1px rgba(255, 255, 255, 0); }
   .tile-8 .element,
   .tile.tile-8 .tile-inner {
     color: #f9f6f2;
-    background: #f2b179; }
+    background: #f2b179 url('../images/8.png');
+    background-size: 100%; }
   .tile-16 .element,
   .tile.tile-16 .tile-inner {
     color: #f9f6f2;
-    background: #f59563;
+    background: #f59563 url('../images/16.png');
     box-shadow: 0 0 30px 10px #F2B179, inset 0 0 0 1px rgba(255, 255, 255, 0.2381); }
+
   .tile.tile-16 .tile-inner,
   .tile.tile-32 .tile-inner,
   .tile.tile-64 .tile-inner {
+    background-size: 100%
     font-size: 45px; }
   .tile.tile-16 .tile-inner span.mass,
   .tile.tile-32 .tile-inner span.mass,
@@ -507,15 +514,16 @@ hr {
   .tile-32 .element,
   .tile.tile-32 .tile-inner {
     color: #f9f6f2;
-    background: #f67c5f;  }
+    background: #f67c5f url('../images/32.png');  }
   .tile-64 .element,
   .tile.tile-64 .tile-inner {
     color: #f9f6f2;
-    background: #f65e3b;
+    background: #f65e3b url('../images/64.png');
     box-shadow: 0 0 30px 10px #f67c5f, inset 0 0 0 1px rgba(255, 255, 255, 0.2381); }
   .tile.tile-128 .tile-inner,
   .tile.tile-256 .tile-inner,
   .tile.tile-super .tile-inner {
+    background-size: 100%;
     font-size: 40px; }
   .tile.tile-128 .tile-inner span.mass,
   .tile.tile-256 .tile-inner span.mass,
@@ -524,15 +532,16 @@ hr {
   .tile-128 .element,
   .tile.tile-128 .tile-inner {
     color: #f9f6f2;
-    background: #edcf72;
+    background: #edcf72 url('../images/128.png');
     box-shadow: 0 0 30px 10px rgba(243, 215, 116, 0.2381), inset 0 0 0 1px rgba(255, 255, 255, 0.14286); }
     @media screen and (max-width: 520px) {
       .tile.tile-128 .tile-inner {
         font-size: 25px; } }
+
   .tile-256 .element,
   .tile.tile-256 .tile-inner {
     color: #f9f6f2;
-    background: #edcc61;
+    background: #edcc61 url('../images/256.png');
     box-shadow: 0 0 30px 10px #edcf72, inset 0 0 0 1px rgba(255, 255, 255, 0.2381); }
     @media screen and (max-width: 520px) {
       .tile.tile-256 .tile-inner {
@@ -541,11 +550,12 @@ hr {
   .tile-1024 .element,
   .tile.tile-super .tile-inner {
     color: #f9f6f2;
-    background: #3c3a32;
+    background: #3c3a32 url('../images/super.png');
     box-shadow: 0 0 30px 10px #edcf72, inset 0 0 0 1px rgba(255, 255, 255, 0.2381); }
     @media screen and (max-width: 520px) {
       .tile.tile-super .tile-inner {
-        font-size: 10px; } }
+        font-size: 25px; } }
+
 
 @-webkit-keyframes appear {
   0% {
@@ -657,6 +667,11 @@ hr {
 .game-explanation {
   margin-top: 50px; }
 
+.credits {
+  font-size: 14px;
+  margin: 8px;
+}
+
 .sharing {
   margin-top: 20px;
   text-align: center; }
@@ -678,15 +693,15 @@ hr {
 
 
   .tile.tile-unstable .tile-inner {
-    -webkit-animation-name: shake; 
-    -webkit-animation-duration: 0.1s; 
+    -webkit-animation-name: shake;
+    -webkit-animation-duration: 0.1s;
     -webkit-transition-property: -webkit-transform;
     -webkit-transition-duration: 1s;
     -webkit-animation-iteration-count: infinite;
     -webkit-animation-timing-function: linear;
 
-    -moz-animation-name: shake; 
-    -moz-animation-duration: 0.1s; 
+    -moz-animation-name: shake;
+    -moz-animation-duration: 0.1s;
     -moz-transition-property: -moz-transform;
     -moz-transition-duration: 1s;
     -moz-animation-iteration-count: infinite;
@@ -887,10 +902,17 @@ hr {
   .game-message .lower {
     margin-top: 30px !important; }
 
+  .credits {
+    font-size: 12px;
+    margin: 6px;
+  }
+
   .sharing > iframe, .sharing > span, .sharing > form {
     display: block;
     margin: 0 auto;
     margin-bottom: 20px; } }
+
+
 .pp-donate button {
   -webkit-appearance: none;
   -moz-appearance: none;
